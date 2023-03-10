@@ -1,0 +1,354 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Carter+One&display=swap');
+
+:root{
+    --custom-white: #efefef;
+    --custom-white-opacity: #efefef88;
+    --custom-black: #121212;
+    --custom-black-opacity: #121212CC;
+    --custom-secondary-black: #222222;
+    --custom-dark-black: #000000;
+    --custom-logo-red: #e50914;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    border: none;
+    outline: none;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    /* font-family: 'Bebas Neue', cursive; */
+    font-family: sans-serif;
+    font-size: max(1.1vmax,16px);
+    background-color: #222222;
+}
+
+.container-fluid{
+    width: 100%;
+}
+
+.container{
+    width:90%;
+    max-width: 1600px;
+    margin: auto;
+}
+
+.ttu{
+    text-transform: uppercase !important;
+}
+.ttc{
+    text-transform: capitalize !important;
+}
+
+h1{
+    text-transform: uppercase;
+}
+
+.pos-rel{
+    position: relative !important;
+}
+
+.pos-abs{
+    position: absolute !important;
+}
+
+.t0{
+    top: 0;
+}
+
+.l0{
+    left: 0;
+}
+
+.h100per{
+    height: 100%;
+}
+
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.col-6{
+    width: 50%;
+    padding: 5px 15px;
+}
+
+.overlay,.landing-header-overlay{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #0008;
+    
+}
+
+.landing-section{
+    min-height: 500px;
+    height: 100vh;
+    margin: 5px 0;
+    overflow: auto;
+}
+.landing-section.faq-section{
+    min-height: 100vh;
+    height: auto;
+    margin: 5px 0;
+    overflow: auto;
+}
+
+.input-field, .but{
+    min-height: 10px;
+    min-width: 100px;
+    padding: 0.5em;
+    border-radius: 3px;
+    font-size: 16px; 
+}
+
+.input-lg,.but-lg{
+    min-width: 160px;
+    padding: 1em;
+    min-height: 50px;
+/*    font-size: 20px;*/
+}
+
+.landing-header-subscribe-form{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.landing-header-subscribe-form .but-lg{
+    font-size: 1.5rem;
+    font-weight: 500;
+    padding: 0.5em;
+}
+
+
+
+.but-custom-red{
+    color: var(--custom-white);
+    background-color: var(--custom-logo-red);
+}
+
+.bg-custom-black{
+    background-color: var(--custom-black);
+}
+.bg-custom-dark-black{
+    background-color: var(--custom-dark-black);
+}
+.bg-custom-dark-black-opacity{
+    background-color: var(--custom-black-opacity);
+}
+
+.text-custom-white{
+    color: var(--custom-white) !important;
+}
+
+.dflex{
+    display: flex !important;
+    flex-wrap: wrap !important;
+}
+
+.jcc{
+    justify-content: center !important;
+}
+
+.aic{
+    align-items: center !important;
+}
+
+.flexcol{
+    flex-direction: column !important;
+}
+
+.img-fluid{
+    max-width: 100%;
+    height: auto;
+}
+
+.fw-reg-400{
+    font-weight: 400 !important;
+}
+
+/* =========== Landing Navbar =========== */
+.main-header-container{
+    min-height: 500px;
+    /* max-height: 500px; */
+    /* height: 100vh; */
+    background-color: #000;
+}
+
+.landing-header-img{
+    width: 100%;
+    min-height: 500px;
+    height: 100vh;
+    -o-object-fit: cover;
+       object-fit: cover;
+}
+
+.landing-navbar{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 0;
+}
+
+.nfLogo {
+	fill: var(--custom-logo-red);
+	line-height: normal;
+} 
+.svg-icon-netflix-logo {
+    height: 3rem;
+    width: 7rem;
+}  
+
+.landing-header-overlay{
+    background-color: #0001;
+}
+
+.landing-header-overlay > *{
+    margin: 10px 0;
+}
+ 
+.landing-header-title, .landing-header-subtitle,.landing-header-subtitle-2,.landing-header-subscribe-form{
+    width: 75%;
+/*    max-width: 992px;*/
+    text-align: center;
+/*    margin: 5px 0;*/
+}
+
+.landing-section .landing-header-title, .landing-section .landing-header-subtitle,.landing-section .landing-header-subtitle-2,.landing-section .landing-header-subscribe-form{
+    width: 80%;
+    text-align: left !important;
+}
+
+.story-card-animation {
+	height: 100%;
+	left: 50%;
+	max-height: 54%;
+	max-width: 73%;
+	position: absolute;
+	top: 46%;
+	transform: translate(-50%,-50%);
+	width: 100%;
+}
+
+.story-card-animation-download {
+	border: 0;
+	height: auto;
+	max-width: 100%;
+}
+
+.landing-action-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.landing-action-container > *{
+    margin: 0 0.5em;
+}
+
+.language-selection-container{
+    padding: 10px 5px;
+    background-color: var(--custom-black);
+    color: var(--custom-white);
+    border-radius: 3px;
+}
+
+#landingLanguageSelector {
+    /* -webkit-appearance: none;
+       -moz-appearance: none;
+            appearance: none; */
+    text-transform:capitalize;
+    background-color: transparent;
+    color: var(--custom-white);
+}
+
+#landingLanguageSelector option{
+    color: var(--custom-black) !important;
+}
+
+.landing-header-title{
+    font-size: 3rem;
+    margin: 5px 0;
+    font-weight: 900;
+}
+
+.landing-header-subtitle{
+    font-size: 1.5rem;
+    font-weight: normal !important;
+}
+.landing-header-subtitle-2{
+    font-size: 1.2rem;
+    font-weight: 400 !important;
+}
+
+.landing-header-subscribe-form .input-lg{
+    max-width: 500px;
+	/* min-width: 320px; */
+    width: 80%;
+
+}
+
+.landing-header-subscribe-form .but-lg{
+    width: 20%;
+    max-width: 200px;
+}
+
+/*Landing Accordion*/
+
+.accordion-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.accordion-container > .landing-header-title{
+    width: 75%;
+    text-align: center !important;
+    margin: 20px 0;
+}
+
+.landing-accordion{
+    width: 80%;
+    margin: 10px 0;
+    padding: 5px;
+    background-color: var(--custom-secondary-black);
+}
+
+.accordion-handle{
+    cursor: pointer;
+    padding: 15px 5px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.accordion-content{
+    display: none;
+    padding: 15px 5px;
+    border-top: 1px solid var(--custom-dark-black);
+}
+/*
+#accordionContent1{
+    display: flex;
+}*/
+
+.landing-faq-subscribe-form,.landing-faq-subtitle-2{
+    width: 70%;
+    margin: 15px auto;
+    text-align: center;
+
+}
+
+.landing-faq-subscribe-form .input-field{
+    width: 70%;
+}
+.landing-faq-subscribe-form .but{
+    width: 20%;
+}

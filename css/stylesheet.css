@@ -1,0 +1,13 @@
+@font-face {
+    font-family: 'Netflix Sans';
+    src: url('NetflixSans-Bold.eot');
+    src: url('NetflixSans-Bold.eot?#iefix') format('embedded-opentype'),
+        url('NetflixSans-Bold.woff2') format('woff2'),
+        url('NetflixSans-Bold.woff') format('woff'),
+        url('NetflixSans-Bold.ttf') format('truetype'),
+        url('NetflixSans-Bold.svg#NetflixSans-Bold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
